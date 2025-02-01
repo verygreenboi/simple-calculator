@@ -1,0 +1,96 @@
+/* Typo */
+
+.roboto {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+#calculator, #calculator .input-display {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+#calculator {
+    flex-direction: column;
+    width: 480px;
+    min-height: 780px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    gap: 3rem;
+}
+
+#calculator .input-display {
+    min-height: 16ch;
+    padding: 0.5rem;
+}
+
+#calculator .buttons {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.5rem;
+}
+
+#calculator .buttons button {
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.row-1 {
+    grid-row: 2 / 3;
+}
+
+.row-2 {
+    grid-row: 3 / 4;
+}
+
+.row-3 {
+    grid-row: 4 / 5;
+}
+
+.row-4 {
+    grid-row: 5 / 6;
+}
+
+#calculator .buttons button.operation {
+    font-size: 2rem;
+    grid-column: 4 / 5;
+}
+
+#calculator .buttons button#equals {
+    grid-column: 2 / 5;
+}
+
+.input-display {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: right;
+    align-items: flex-end;
+}
+
+.input-display__history__value {
+    font-size: 3ch;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.input-display__result__value {
+    font-size: 5ch;
+    font-weight: bold;
+}

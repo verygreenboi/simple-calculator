@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="roboto">
+
+    <div id="calculator">
+
+        <div class="input-display">
+            <div class="input-display__result">
+                <span id="result" class="input-display__result__value">0</span>
+            </div>
+            <div class="input-display__history">
+                <span id="history" class="input-display__history__value">0</span>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button onclick="clearCalculator()" class="ac">AC</button>
+            <button onclick="addExpression('/')" class="operation divide">÷</button>
+            <button onclick="addExpression('*')" class="operation multiply">×</button>
+            <button onclick="addExpression('-')" class="operation subtract">-</button>
+            <button onclick="addExpression('+')" class="operation add">+</button>
+            <button onclick="calculate()" class="operation row-4">=</button>
+            <button onclick="addExpression(7)" class="row-1">7</button>
+            <button onclick="addExpression(8)" class="row-1">8</button>
+            <button onclick="addExpression(9)" class="row-1">9</button>
+            <button onclick="addExpression(4)" class="row-2">4</button>
+            <button onclick="addExpression(5)" class="row-2">5</button>
+            <button onclick="addExpression(6)" class="row-2">6</button>
+            <button onclick="addExpression(1)" class="row-3">1</button>
+            <button onclick="addExpression(2)" class="row-3">2</button>
+            <button onclick="addExpression(3)" class="row-3">3</button>
+            <button onclick="addExpression(0)" class="row-4">0</button>
+            <button onclick="addExpression('.')" class="row-4">.</button>
+
+        </div>
+
+    </div>
+    
+    <script src="src/index.js"></script>
+</body>
+</html>
